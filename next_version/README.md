@@ -1,6 +1,5 @@
 <h1 align="center">
 Desafio BTG versão NextJS
-By Gabriel Alexander
 </h1>
 <p align="center">
 <img src="[https://img.shields.io/github/issues/Gabriel-Alexander10/Gobarber-web](https://img.shields.io/github/issues/Gabriel-Alexander10/Gobarber-web)" alt="issues" />
