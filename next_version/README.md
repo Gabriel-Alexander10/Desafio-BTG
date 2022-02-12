@@ -22,8 +22,6 @@ By Gabriel Alexander
 
 🚀 Desafio BTG (v NextJs) é uma aplicação feita para mostrar a possibilidade de redimensionar gráficos construidos com a biblioteca [ploty.js](https://github.com/plotly/react-plotly.js/).
 
-GoBarber é uma aplicação desenvolvida em ReactJS, que tem como objetivo facilitar o agendamento com os barbeiros da região. O projeto foi desenvolvido durante o Bootcamp GoStack 14 fornecido pela Rocketseat.
-
 ## Features
 
 - [x]  Renderizar gráficos do plotly
