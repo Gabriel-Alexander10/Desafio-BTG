@@ -26,6 +26,8 @@ By Gabriel Alexander
 
 - [x]  Renderizar gráficos do plotly
 - [x]  Redimensionar gráficos do plotly
+- [x]  Renderizar gráficos do plotly em Python + React
+- [x]  Redimensionar gráficos do plotly  em Python + React
 
 ## Layout
 
