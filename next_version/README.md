@@ -15,8 +15,7 @@ By Gabriel Alexander
 <a href="#layout">Layout</a> •
 <a href="#techs">Techs</a> •
 <a href="#author">Author</a> •
-<a href="#license">License</a> •
-<a href="#backend">Backend</a>
+<a href="#license">License</a>
 </p>
 
 ## About
@@ -39,17 +38,19 @@ GoBarber é uma aplicação desenvolvida em ReactJS, que tem como objetivo facil
 
 ## How it works
 
-Para realizar 
+> ### instalar dependencias
+> yarn 
+> 
+> #or
+> 
+> npm i
 
-> # instalar dependencias
-yarn 
-# or
-npm i
-
-# inicie o projeto
-yarn dev
-# or
-npm run dev
+> ### iniciar o projeto
+> yarn dev
+>
+> #or
+>
+> npm run dev
 > 
 > 
 > Abra [http://localhost:3000](http://localhost:3000/) no seu navegador e veja o resultado.
