@@ -1,0 +1,11 @@
+include python_version/python_version.min.js
+include python_version/python_version.min.js.map
+include python_version/async-*.js
+include python_version/async-*.js.map
+include python_version/*-shared.js
+include python_version/*-shared.js.map
+include python_version/metadata.json
+include python_version/package-info.json
+include README.md
+include LICENSE
+include package.json
