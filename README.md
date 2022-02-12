@@ -32,8 +32,8 @@ GoBarber é uma aplicação desenvolvida em ReactJS, que tem como objetivo facil
 ## Layout
 
 <p align="center">
-<img src="./src/assets/layout.png" align="center" alt="Layout" />
-<img src="./src/assets/modal.png" align="center" alt="Modal do gráfico" />
+<img src="./next_version/src/assets/layout.png" align="center" alt="Layout" />
+<img src="./next_version/src/assets/modal.png" align="center" alt="Modal do gráfico" />
 </p>
 
 ## How it works
