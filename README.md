@@ -1,12 +1,6 @@
 <h1 align="center">
 Desafio BTG
 </h1>
-<p align="center">
-<img src="[https://img.shields.io/github/issues/Gabriel-Alexander10/Gobarber-web](https://img.shields.io/github/issues/Gabriel-Alexander10/Gobarber-web)" alt="issues" />
-<img src="[https://img.shields.io/github/forks/Gabriel-Alexander10/Gobarber-web](https://img.shields.io/github/forks/Gabriel-Alexander10/Gobarber-web)" alt="forks" />
-<img src="[https://img.shields.io/github/stars/Gabriel-Alexander10/Gobarber-web](https://img.shields.io/github/stars/Gabriel-Alexander10/Gobarber-web)" alt="stars" />
-<img src="[https://img.shields.io/github/license/Gabriel-Alexander10/Gobarber-web](https://img.shields.io/github/license/Gabriel-Alexander10/Gobarber-web)" alt="license" />
-</p>
 
 <p align="center">
 <a href="#about">About</a> •
