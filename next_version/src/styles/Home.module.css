@@ -59,3 +59,18 @@
 }
 
 
+.dragContainer {
+  padding: 24px;
+  background-color: #181B23;
+  height: 600px;
+}
+
+.dragContainer > div {
+  display: flex;
+  padding: 24px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px dashed #3C4043;
+}
+

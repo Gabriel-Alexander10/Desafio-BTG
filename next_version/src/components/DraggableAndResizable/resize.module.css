@@ -1,0 +1,19 @@
+.resizable {
+  border-radius: 0.75rem;
+  padding: 1rem;
+  width: max-content;
+  color: white;
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  touch-action: none;
+  min-height: 250px;
+  min-width: 500px;
+  background-color: #181B23;
+  border: 1px solid #3C4043;
+
+  /* This makes things *much* easier */
+  box-sizing: border-box;
+}

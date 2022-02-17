@@ -7,10 +7,18 @@ import { Modal } from '../components/Modal';
 import { Resizable } from '../components/Resizable';
 import styles from '../styles/Home.module.css';
 
+import dynamic from 'next/dynamic'
+
+const DraggableAndResizable = dynamic(() => import('../components/DraggableAndResizable'), {
+    ssr: false
+});
+
 
 const Home: NextPage = () => {
   // const [graphWidth, setGraphWidth] = useState(500);
   const [windGraphWidth, setWindGraphWidth] = useState(500);
+  const [windGraphDraggableWidth, setWindGraphDraggableWidth] = useState(450);
+  const [graphDraggableWidth, setGraphDraggableWidth] = useState(450);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -51,6 +59,24 @@ const Home: NextPage = () => {
                 Etiam feugiat sagittis augue vel blandit. Suspendisse vel cursus est. 
               </p>
             </div>
+        </div>
+
+        <div className={styles.dragContainer}>
+          <div>
+            <DraggableAndResizable id="wind-graph-draggable" 
+              setGraphWidth={setWindGraphDraggableWidth} 
+              width={windGraphDraggableWidth}
+            >
+              <WindGraph width={windGraphDraggableWidth} />
+            </DraggableAndResizable>
+
+            <DraggableAndResizable id="graph-draggable" 
+              setGraphWidth={setGraphDraggableWidth} 
+              width={graphDraggableWidth}
+            >
+              <Graph width={graphDraggableWidth} />
+            </DraggableAndResizable>
+          </div>
         </div>
       </main>
 
