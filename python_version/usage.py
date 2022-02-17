@@ -55,6 +55,19 @@ modalGraph = dash.dcc.Graph(
     id='my-modal-graph',
 )
 
+
+windDraggableGraph = dash.dcc.Graph(
+    figure=figure,
+    style={ "height": 300 },
+    id='windDraggableGraph',
+)
+
+draggableGraph = dash.dcc.Graph(
+    figure=figure,
+    style={ "height": 300 },
+    id='draggableGraph',
+)
+
 app.layout = html.Div([
     python_version.Home(
         children=graph,
@@ -66,7 +79,25 @@ app.layout = html.Div([
         id="graph",
         isOpen=False,
         width=width
+    ),
+    html.Div(
+        children=[
+            html.Div([
+                python_version.DraggableAndResizable(
+                    children=windDraggableGraph,
+                    id="windDraggableGraph-container",
+                    width=width
+                ),
+                python_version.DraggableAndResizable(
+                    children=draggableGraph,
+                    id="draggableGraph-container",
+                    width=width
+                )
+            ])
+        ],
+        className="dragContainer"
     )
+    
 ])
 
 @app.callback(Output('graph', 'isOpen'), [Input('home', 'isOpen')])
@@ -90,6 +121,31 @@ def display_output(value):
 
     return updatedStyle
 
+@app.callback(Output('draggableGraph', 'style'), [Input('draggableGraph-container', 'width')])
+def display_output(value):
+    height = 500
+    if value * 0.5 <= 500:
+        height = value  * 0.5 
+
+    updatedStyle = {
+        "height": height,
+        "width": value
+    }
+
+    return updatedStyle
+
+@app.callback(Output('windDraggableGraph', 'style'), [Input('windDraggableGraph-container', 'width')])
+def display_output(value):
+    height = 500
+    if value * 0.5 <= 500:
+        height = value  * 0.5 
+
+    updatedStyle = {
+        "height": height,
+        "width": value
+    }
+
+    return updatedStyle
 
 if __name__ == '__main__':
     app.run_server(debug=False)
